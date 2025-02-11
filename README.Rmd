@@ -14,25 +14,23 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
-# vpstheme
+# wahealththeme
 
 This package is in development.
 
-Version 2.0.0 includes useable palettes and themes for the Department of Health and the Department of Families, Fairness and Housing as well as a range of helper functions, these palettes and themes require refinement.
+Currently working on developing usable palettes and themes for the Department of Health and each of the Health Service Providers (East Metro, North Metro, South Metro, WACHS and CAHS) as well as a range of helper functions.
 
-Version 2.0.0 also includes `scale_*_dh()` functions that enable the use of the Department of Health's palette for fills and colours in `ggplot()` objects.
+Working on Adapting the `scale_*_dh()` functions recently added by vpstheme that enables the use of the to enable the WA Department of Health's palette for fills and colours in `ggplot()` objects.
 
-In its current form, the package is useable and provides example code to enable others to extend `theme_vps_foundation()` and adapt `scale_*_dh()` for other departments.
+In its current form, the package is NOT useable. Recommend using vpstheme for now!
 
 <!-- badges: start -->
 
-![GitHub R package version](https://img.shields.io/github/r-package/v/zerogetsamgow/vpstheme) 
-![GitHub last commit](https://img.shields.io/github/last-commit/zerogetsamgow/vpstheme)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zerogetsamgow/vpstheme/r.yml)
+![GitHub R package version](https://img.shields.io/github/r-package/v/alivaughan/wa_doh_theme) ![GitHub last commit](https://img.shields.io/github/last-commit/alivaughan/wa_doh_theme) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/alivaughan/wa_doh_theme/r.yml)
 
 <!-- badges: end -->
 
-The main purpose of **vpstheme** is to enable R users in the Victorian Public Service to use the colours and fonts defined in the [Brand Victoria Guidelines](https://www.vic.gov.au/brand-victoria-guidelines) to create compliant visualisations in ggplot.
+**wahealththeme** has been adapted from **vpstheme**. It is designed as a helper to enable R users across WA Heath to use the colours and fonts defined in the [WA Health Style Guide](https://doh-healthpoint.hdwa.health.wa.gov.au/directory/OfficeOfTheDirectorGeneral/Communications/Documents/Style-Guide.pdf) to create compliant visualisations in ggplot and, eventually tables in gt.
 
 ## Installation
 
@@ -43,13 +41,13 @@ You can install the development version of **vpstheme** from [GitHub](https://gi
 devtools::install_github("zerogetsamgow/vpstheme")
 ```
 
-## Brand Victoria
+## Corporate style guide
 
-At the core of **vpstheme** are elements of Brand Victoria, including colours, palettes and fonts.
+At the core of **wahealtheme** are elements prescribed by the various WA Health style guides including colours, palettes and fonts.
 
-### Brand Victoria colours
+### Department of Health
 
-The Brand Victoria colour palette consists of ten primary colours, shown below.
+The Department of Health colour palette consists of ten primary colours, shown below.
 
 ```{r bv_primary_table, include = FALSE}
 library(tibble)
@@ -473,8 +471,7 @@ ggplot(
   theme_vps_dffh()
 ```
 
-
-The themes at present largely only differ in the background colours that can be specified. 
+The themes at present largely only differ in the background colours that can be specified.
 
 -   the base_colour parameter of `theme_vps_dh` can take values `pink`, `orange`, `red` and `blue` that correspond to the department's primary colours.
 
