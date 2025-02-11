@@ -1,16 +1,17 @@
-Package: vpstheme
+Package: wahealththeme
 Type: Package
-Title: A collection of themes and functions for R users in the VPS
-Version: 2.3.1
+Title: A collection of themes and functions for R users in WA Health
+Version: 0.1.0-dev
 Authors@R: c(
-    person("Sam", "Gow", email = "sam.gow@gmail.com", role = c("aut", "cre"))
+    person("Sam", "Gow", email = "sam.gow@gmail.com", role = c("aut", "cre")),
+    person("Ali", "Vaughan", email = "ali.g.vaughan@gmail.com", role = "aut", ctb),))
   )
-Description: The main purpose of vpstheme is to enable R users in the Victorian Public Service to use the colours and fonts defined in the [Brand Victoria Guidelines](https://www.vic.gov.au/brand-victoria-guidelines) to create compliant visualisations in ggplot.
+Description:  wahealtheme has been adapted from vpstheme. It is designed as a helper to enable R users across WA Heath to use the colours and fonts defined in the [WA Health Style Guide](https://doh-healthpoint.hdwa.health.wa.gov.au/directory/OfficeOfTheDirectorGeneral/Communications/Documents/Style-Guide.pdf) to create compliant visualisations in ggplot and tables in gt.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/zerogetsamgow/vpstheme
-BugReports: https://github.com/zerogetsamgow/vpstheme/issues
+URL: https://github.com/AliVaughan/wa_doh_theme
+BugReports: https://github.com/AliVaughan/wa_doh_theme/issues
 Depends: 
     R (>= 3.5)
 RoxygenNote: 7.3.2
