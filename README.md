@@ -52,4 +52,4 @@ Health style guides including colours, palettes and fonts.
 
 ### Department of Health
 
-The Department of Health colour palette consists of blah blah blah.
+The Department of Health colour palette consists of blah blah blah blah.
